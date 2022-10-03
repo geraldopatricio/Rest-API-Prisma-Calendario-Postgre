@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "07a93875-e472-4c0f-b3d6-5223a60e3bea",
+		"name": "2RPNet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22348730"
+	},
+	"item": [
+		{
+			"name": "Visualizar Eventos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Evento Específico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/evento/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"evento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Eventos de uma Pessoa Específica",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/eventos/pessoa/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eventos",
+						"pessoa",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visualizar Pessoas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Pessoa Específica",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pessoa/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoa",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Pessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João do Pé de Feijão\",\r\n    \"email\": \"joao@gpsoft.com.br\",\r\n    \"celular\": \"85997635122\",\r\n    \"endereco\": \"Rua Neusa de Freitas Sá\",\r\n    \"numero\": \"54B\",\r\n    \"bairro\": \"Timbu\",\r\n    \"cidade\": \"Eusébio\",\r\n    \"uf\": \"CE\",\r\n    \"cep\": \"61777460\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pessoa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Pessoa Específica",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Geraldo Alterado com sucesso\",\r\n    \"email\": \"geraldinho@gpsoft.com.br\",\r\n    \"celular\": \"85997635122\",\r\n    \"endereco\": \"Rua Neusa de Freitas Sá\",\r\n    \"numero\": \"54B\",\r\n    \"bairro\": \"Timbu\",\r\n    \"cidade\": \"Eusébio\",\r\n    \"uf\": \"CE\",\r\n    \"cep\": \"61777460\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pessoa/alterar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoa",
+						"alterar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Pessoa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João do Pé de Feijão\",\r\n    \"email\": \"joao@gpsoft.com.br\",\r\n    \"celular\": \"85997635122\",\r\n    \"endereco\": \"Rua Neusa de Freitas Sá\",\r\n    \"numero\": \"54B\",\r\n    \"bairro\": \"Timbu\",\r\n    \"cidade\": \"Eusébio\",\r\n    \"uf\": \"CE\",\r\n    \"cep\": \"61777460\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pessoa/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoa",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Evento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João do Pé de Feijão\",\r\n    \"email\": \"joao@gpsoft.com.br\",\r\n    \"celular\": \"85997635122\",\r\n    \"endereco\": \"Rua Neusa de Freitas Sá\",\r\n    \"numero\": \"54B\",\r\n    \"bairro\": \"Timbu\",\r\n    \"cidade\": \"Eusébio\",\r\n    \"uf\": \"CE\",\r\n    \"cep\": \"61777460\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/evento/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"evento",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Flag DIATODO de um Evento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/evento/diaTodo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"evento",
+						"diaTodo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar um Evento Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Call 2 com a 2RPNet\",\r\n    \"tipo\": \"Call\",\r\n    \"dthrIni\": \"2022-10-03T16:00:00.000Z\",\r\n    \"dthrFim\": \"2022-10-03T17:00:00.000Z\",\r\n    \"diaTodo\": false,\r\n    \"eventoUrl\": \"https://meet.google.com/iov-sdnv-ope/xpto\",\r\n    \"local\": \"Google Meeting\",\r\n    \"detalhes\": \"Call para tirar duvidas se é para fazer o frontend com React e qual seria o framework\",\r\n    \"conviteId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/evento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"evento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar um Evento Específico",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Call 2 com a 2RPNet - alterado\",\r\n    \"tipo\": \"Call\",\r\n    \"dthrIni\": \"2022-10-03T16:00:00.000Z\",\r\n    \"dthrFim\": \"2022-10-03T17:00:00.000Z\",\r\n    \"diaTodo\": false,\r\n    \"eventoUrl\": \"https://meet.google.com/iov-sdnv-ope/xpto\",\r\n    \"local\": \"Google Meeting\",\r\n    \"detalhes\": \"Call para tirar duvidas se é para fazer o frontend com React e qual seria o framework\",\r\n    \"conviteId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/evento/alterar/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"evento",
+						"alterar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
