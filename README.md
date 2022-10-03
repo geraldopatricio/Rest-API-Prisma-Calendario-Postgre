@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.prisma.io/docs/" target="blank"><img src="./src/assets/logo.png" width="200" alt="Prisma" /></a>
+  <a href="https://www.prisma.io/docs/" target="blank"><img src="./src/assets/prisma.png" width="200" alt="Prisma" /></a>
 </p>
 
 # Descrição do Projeto
@@ -17,13 +17,13 @@ Acesse via.\
 Endereço [http://localhost:3000](http://localhost:3000) no browser.
 
 ## Banco de Dados
-<img src="./src/assets/banco.png" alt="Tabelas" /> 
+<img src="./src/assets/banco.jpg" alt="Tabelas" /> 
 
 ## Schema SQL
-<img src="./src/assets/sql.png" alt="Schema SQL" /> 
+<img src="./src/assets/sql.jpg" alt="Schema SQL" /> 
 
 ## Postman
-<img src="./src/assets/postman.png" alt="Postman" /> 
+<img src="./src/assets/postman.jpg" alt="Postman" /> 
 
 ```
 Para testar no Postman:
