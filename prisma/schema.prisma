@@ -1,0 +1,36 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Pessoa {
+  id        Int       @default(autoincrement()) @id
+  nome      String    @db.VarChar(50)
+  email     String    @unique
+  celular   String    @db.VarChar(11) 
+  endereco  String    @db.VarChar(50)
+  numero    String    @db.VarChar(10)
+  bairro    String    @db.VarChar(30)
+  cidade    String    @db.VarChar(30)
+  uf        String    @db.Char(2)
+  cep       String    @db.VarChar(8)
+  eventos   Evento[]
+}
+
+model Evento {
+  id        Int       @default(autoincrement()) @id
+  titulo    String    @db.VarChar(150)
+  tipo      String    @db.VarChar(30)
+  convite   Pessoa?   @relation(fields: [conviteId], references: [id])
+  conviteId Int?
+  dthrIni   DateTime  @default(now()) @db.Timestamptz
+  dthrFim   DateTime  @default(now()) @db.Timestamptz
+  diaTodo   Boolean   @default(false)
+  eventoUrl String?   
+  local     String    @db.VarChar(150)
+  detalhes  String?
+}
