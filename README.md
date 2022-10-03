@@ -20,14 +20,14 @@ Endereço [http://localhost:3000](http://localhost:3000) no browser.
 <img src="./src/assets/banco.jpg" alt="Tabelas" /> 
 
 ## Schema SQL
-<img src="./src/assets/sql.jpg" alt="Schema SQL" /> 
+<img src="./src/assets/sql.JPG" alt="Schema SQL" /> 
 
 ## Postman
 <img src="./src/assets/postman.jpg" alt="Postman" /> 
 
 ```
 Para testar no Postman:
-Arquivo: 2RPNet.postman_collection
+Arquivo: src/assets/2RPNet.postman_collection
 ```
 
 ## Suporte:
