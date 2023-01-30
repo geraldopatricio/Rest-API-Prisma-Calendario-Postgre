@@ -33,5 +33,5 @@ Arquivo: src/assets/2RPNet.postman_collection
 ## Suporte:
 ``` 
 E-Mail:   gpatricio.melo@gmail.com 
-WhatsApp: (85) 9 9763-5122
+WhatsApp: (85) 9 9731-9843
 ```
